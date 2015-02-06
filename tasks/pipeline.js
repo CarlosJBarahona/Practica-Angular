@@ -15,23 +15,22 @@
 // (if you're using LESS with the built-in default config, you'll want
 //  to change `assets/styles/importer.less` instead.)
 var cssFilesToInject = [
-  'styles/**/*.css',
   "/bower_components/angular-material/angular-material.min.css",
+  'styles/**/*.css',
 ];
 
 
 // Client-side javascript files to inject in order
 // (uses Grunt-style wildcard/glob/splat expressions)
 var jsFilesToInject = [
+  "/bower_components/angular/angular.min.js",
+  "/bower_components/angular-animate/angular-animate.min.js",
+  "/bower_components/angular-aria/angular-aria.min.js",
+  "/bower_components/hammerjs/hammer.min.js",
+  "/bower_components/angular-material/angular-material.min.js",
   'js/dependencies/sails.io.js',
   'js/dependencies/**/*.js',
   'js/**/*.js',
-  "/bower_components/angular-animate/angular-animate.min.js",
-  "/bower_components/angular-aria/angular-aria.min.js",
-  "/bower_components/angular/angular.min.js",
-  "/bower_components/angular-material/angular-material.min.js",
-  "/bower_components/jquery/dist/jquery.min.js",
-  "/bower_components/hammerjs/hammer.min.js"
 ];
 
 
