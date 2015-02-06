@@ -1,0 +1,23 @@
+{
+  "name": "angular-material",
+  "version": "0.0.0",
+  "authors": [
+    "Your Name <ingbarahonacarlos@hotmail.com>"
+  ],
+  "description": "practica",
+  "main": "bower.json",
+  "license": "MIT",
+  "homepage": "index",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "~1.3.12",
+    "angular-material": "~0.7.1",
+    "hammerjs": "~2.0.4"
+  }
+}
