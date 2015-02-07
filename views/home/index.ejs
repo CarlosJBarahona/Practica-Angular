@@ -1,4 +1,17 @@
-<div ng-controller="AppCtrl" layout="row" layout-fill>
+<div layout="row" flex ng-controller="AppCtrl">
+  <section layout="row" flex>
+    <md-sidenav md-component-id="left" md-is-locked-open="$media('gt-md')" ng-controller="BarraCtrl">
+       <md-toolbar id="mi-nav-bar" class="md-theme-indigo">
+         <h1 class="md-toolbar-tools">Sidenav Left</h1>
+        </md-toolbar>
+    </md-sidenav>
+  </section>
+</div>
+
+  <md-button ng-click="ocultar()"class="md-primary">
+        Toggle right
+  </md-button>
+<!--<div ng-controller="AppCtrl" layout="row" layout-fill>
   <section layout="row" flex>
     <md-content flex class="md-padding">
       <div layout="column" layout-fill layout-align="center center">
@@ -16,7 +29,7 @@
         </div>
       </div>
     </md-content>
-    <md-sidenav class="md-sidenav-right md-whiteframe-z2" md-component-id="right">
+    <md-sidenav class="md-sidenav-top md-whiteframe-z2" md-component-id="right">
       <md-toolbar class="md-theme-light">
         <h1 class="md-toolbar-tools">Sidenav Right</h1>
       </md-toolbar>
@@ -27,7 +40,7 @@
       </md-content>
     </md-sidenav>
   </section>
-</div>
+</div> -->
 
 
 

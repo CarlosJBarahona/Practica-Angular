@@ -4,16 +4,16 @@
 
  var app = angular.module('angular-material', ['ngMaterial'])
   .controller('AppCtrl', function($scope, $timeout, $mdSidenav, $log) {
-    $scope.toggleRight = function() {
-      $mdSidenav('right').toggle()
+    $scope.close = function() {
+      $mdSidenav('left').toggle()
                           .then(function(){
-                            $log.debug("toggle RIGHT is done");
+                            $log.debug("Mostrar");
                           });
     };
   })
-  .controller('RightCtrl', function($scope, $timeout, $mdSidenav, $log) {
-    $scope.close = function() {
-      $mdSidenav('right').close()
+  .controller('BarraCtrl', function($scope, $timeout, $mdSidenav, $log) {
+    $scope.ocultar = function() {
+      $mdSidenav('left').close()
                           .then(function(){
                             $log.debug("close RIGHT is done");
                           });
