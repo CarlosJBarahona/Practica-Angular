@@ -1,22 +1,52 @@
+var app = angular.module('angular-material', ['ngMaterial']);
+app.controller('NavbarCtrl', function($scope, $mdSidenav) {
+  $scope.openLeftMenu = function() {
+    $mdSidenav('left').toggle();
+  };
+  $scope.closeLeftMenu = function() {
+    $mdSidenav('left').close();
+  };
+  $scope.noticias = [
+   {
+         title:'Lorem ipsum dolor',
+         image:'5',
+         text:'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa'
+   },
+   {
+         title:'Lorem ipsum dolor',
+         image:'6',
+         text:'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa'
+   }
+    ];
+});
 
-(function(){
-  "use strict";
+'use strict';
 
- var app = angular.module('angular-material', ['ngMaterial'])
-  .controller('AppCtrl', function($scope, $timeout, $mdSidenav, $log) {
-    $scope.close = function() {
-      $mdSidenav('left').toggle()
-                          .then(function(){
-                            $log.debug("Mostrar");
-                          });
-    };
-  })
-  .controller('BarraCtrl', function($scope, $timeout, $mdSidenav, $log) {
-    $scope.ocultar = function() {
-      $mdSidenav('left').close()
-                          .then(function(){
-                            $log.debug("close RIGHT is done");
-                          });
-    };
-  });
-})();
+angular.module('angular-material')
+  .controller('MainCtrl', function ($scope) {
+
+  $scope.slides = [
+   {
+         title:'Lorem ipsum dolor',
+         image:'1',
+         text:'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa'
+   },
+   {
+         title:'Lorem ipsum dolor',
+         image:'2',
+         text:'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa'
+   },
+      {
+         title:'Lorem ipsum dolor',
+         image:'3',
+         text:'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa'
+   },
+      {
+         title:'Lorem ipsum dolor',
+         image:'4',
+         text:'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa'
+   }
+
+    ];
+
+});

@@ -1,1 +1,4 @@
-#mi-nav-bar{background: radial-gradient(circle, #1799C5, #045374,#022E5D);color: white}
+/*.post{background: radial-gradient(circle, #1799C5, #045374,#022E5D);color: white}*/
+.post{background: #022E5D;color: white;text-align: justify;}
+.img-post{width: 100%;height: 200px}
+.titulo-post{font-weight: 700;text-align: center;}}
