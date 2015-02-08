@@ -1,20 +1,44 @@
-<div ng-controller="NavbarCtrl" layout="column" >
+<div ng-controller="MenuCtrl" layout="column">
+		<md-content layout="row" hide-gt-sm layout-sm="column" flex="100" >
+			<div flex class="btn-menu" >
+				<h3 class="h3-menu">MENU</h3>
+			</div>
+		</md-content>
+		<md-content flex layout="row" hide-sm >
+			<div flex class="btn-menu">
+				<a href=""class="h3-menu">opcion</a>
+			</div>
+			<div flex class="btn-menu">
+				<a href=""class="h3-menu">opcion</a>
+			</div>
+			<div flex class="btn-menu">
+				<a href=""class="h3-menu">opcion</a>
+			</div>
+			<div flex class="btn-menu">
+				<a href=""class="h3-menu">opcion</a>
+			</div>
+		</md-content>
+</div>
+
+<div ng-controller="NavbarCtrl" layout="column" layout-align="center center">
     <md-sidenav md-component-id="left">
-      <md-button ng-click="closeLeftMenu()">
+      <md-button class="md-raised md-warn" ng-click="closeLeftMenu()">
           Cerrar
       </md-button>
 	    <md-content class='md-padding' layout-align-gt-sm  ng-repeat="noticia in noticias">
-		      <md-toolbar>
-		        <h2 class="md-toolbar-tools">
-		          <span>{{noticia.title}}</span>
-		        </h2>
-		     </md-toolbar>
-		     <img class="img-post" src="images/{{noticia.image}}.jpg" >
-		      <p>{{noticia.text}}</p>
+			<md-toolbar class="mi-toolbar-noticia">
+				<h2 class="md-toolbar-tools titulo-post" ng-click="noticiaVisibility = !noticiaVisibility">
+					<span class="">{{noticia.title}}</span>
+				</h2>
+			</md-toolbar>
+			<div ng-show="noticiaVisibility" class="animated mi-md-content">			
+				<img class="img-post" src="images/{{noticia.image}}.jpg" >
+				<p class="post">{{noticia.text}}</p>
+			</div>
 	    </md-content>
     </md-sidenav>
      <md-content>
-      <md-button ng-click="openLeftMenu()">
+      <md-button class="md-primary" ng-click="openLeftMenu()">
           Post Recientes
       </md-button>
     </md-content>
@@ -22,13 +46,15 @@
 
 
 <div layout="row" flex layout-sm="column" ng-controller="MainCtrl">
-	<md-content class='md-padding' layout-align-gt-sm  ng-repeat="slide in slides">
-		<md-toolbar>
-			<h2 class="md-toolbar-tools titulo-post">
+	<md-content flex="25" flex-sm="100"  class='md-padding' ng-repeat="slide in slides">
+		<md-toolbar class="mi-toolbar-slide">
+			<h2 class="md-toolbar-tools titulo-post" ng-click="slideVisibility = !slideVisibility">
 				<span class="">{{slide.title}}</span>
 			</h2>
 		</md-toolbar>
+		<div ng-show="slideVisibility" class="animated mi-md-content">			
 			<img class="img-post" src="images/{{slide.image}}.jpg" >
 			<p class="post">{{slide.text}}</p>
+		</div>
 	</md-content>
 </div>

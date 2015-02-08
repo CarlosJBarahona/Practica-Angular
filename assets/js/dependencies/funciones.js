@@ -23,7 +23,7 @@ app.controller('NavbarCtrl', function($scope, $mdSidenav) {
 'use strict';
 
 angular.module('angular-material')
-  .controller('MainCtrl', function ($scope) {
+  app.controller('MainCtrl', function ($scope) {
 
   $scope.slides = [
    {
@@ -48,5 +48,10 @@ angular.module('angular-material')
    }
 
     ];
+
+});
+
+angular.module('angular-material')
+  app.controller('MenuCtrl', function ($scope) {
 
 });
