@@ -45,4 +45,12 @@ body{}
 #md-content-publicacion-event.ng-hide{transition: .5s linear all;opacity: 1;display: block!important;}
 #md-content-publicacion-serie.ng-hide{transition: .5s linear all;opacity: 1;display: block!important;}
 #contenido-publicacion.ng-hide{transition: .5s linear all;opacity: 1;display: block!important;}
+}
+
+@media (min-width: 601px){
+#md-content-publicacion-post.ng-hide{display: block!important;}
+#md-content-publicacion-new.ng-hide{display: block!important;}
+#md-content-publicacion-event.ng-hide{display: block!important;}
+#md-content-publicacion-serie.ng-hide{display: block!important;}
+#contenido-publicacion.ng-hide{display: block!important;}
 } 
