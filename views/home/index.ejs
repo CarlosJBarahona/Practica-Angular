@@ -149,35 +149,7 @@
 
 			</md-content>
 
-		<md-content id="contenedor-event" layout="column" class="md-padding "  flex>
-			
-			     <md-content>
-				      <md-toolbar class="mi-toolbar-post" >
-					      	<h2 class="md-toolbar-tools titulo-post-new">
-								<span class="span-titulo-post">Series</span>
-								<span hide-gt-sm flex flex-order="2" ng-click="columnaserieVisibility = !columnaserieVisibility" class="">mostrar</span>
-							</h2>
-				      </md-toolbar>
-			    </md-content>
-
-				
-				<md-content id="md-content-publicacion-serie" class="md-padding " flex ng-repeat="serie in series" hide-sm show-gt-sm ng-hide="columnaserieVisibility">
-					<md-toolbar class="mi-toolbar-slide">
-						<h2 class="md-toolbar-tools titulo-post-event">
-							<span class="">{{serie.title}}</span>
-							<span hide-gt-sm flex flex-order="2" ng-click="eventVisibility = !eventVisibility" class="">mostrar</span>
-						</h2>
-					</md-toolbar>
-					<div layout="row" layout-align="start center" id="contenido-publicacion" class="contenido-publicacion" hide-sm show-gt-sm ng-hide="eventVisibility" >
-						<div id="publicacion" class="imagen-publicacion"><img class="img-post" src="images/{{serie.image}}.jpg"></div>
-						<div id="publicacion" class="text-publicacion">{{serie.text}}</div>
-					</div>
-				</md-content>
-
-			</md-content>
-
-
-
+		
 		</div>
 
 </md-content>

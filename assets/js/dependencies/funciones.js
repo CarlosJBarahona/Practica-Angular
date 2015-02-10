@@ -57,7 +57,7 @@ angular.module('angular-material')
    {
          title:'Post 1 Lorem ipsum dolor',
          image:'1',
-         text:'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa'
+         text:'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa,'
    },
    {
          title:'Post 2 Lorem ipsum dolor',
@@ -124,31 +124,6 @@ angular.module('angular-material')
    }
 
     ];
-
-      $scope.series = [
-   {
-         title:'Series 1 Lorem ipsum dolor',
-         image:'1',
-         text:'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa'
-   },
-   {
-         title:'Series 2 Lorem ipsum dolor',
-         image:'2',
-         text:'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa'
-   },
-      {
-         title:'Series 3 Lorem ipsum dolor',
-         image:'3',
-         text:'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa'
-   },
-      {
-         title:'Series 4 Lorem ipsum dolor',
-         image:'4',
-         text:'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa'
-   }
-
-    ];
-
 
 });
 

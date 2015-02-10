@@ -38,7 +38,7 @@ body{}
 .span-titulo-post{margin: 0 auto;font-size: 20px}
 .btn-post{text-align: center;color: white;}
 .span-post{text-align: center;}
-.contenido-publicacion{background: radial-gradient(circle, #003867, #001A4B, #00082C);text-align: center;color: white;text-align: left;}
+.contenido-publicacion{text-decoration: none;background: radial-gradient(circle, #003867, #001A4B, #00082C);text-align: center;color: white;text-align: justify;font-size: 13px}
 
 
 @media (min-width: 0px) and (max-width:  600px){
