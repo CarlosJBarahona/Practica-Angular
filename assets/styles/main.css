@@ -19,6 +19,7 @@ body{}
 .btn-post-recientes{color: white}
 .mi-toolbar-noticia{background: radial-gradient(circle, #CE0000,#850000,#520000);border-radius: 5px}
 
+
 #contenido-publicacion-post{transition: .5s linear all;opacity: 1;}
 #contenido-publicacion-post.ng-hide{transition: .5s linear all;opacity: 1;overflow: hidden;}
 #contenedor-event,#contenedor-new,#contenedor-post,#md-content-publicacion-post,#md-content-publicacion-new,#md-content-publicacion-event,#md-content-publicacion-serie{background: transparent;}
@@ -37,6 +38,7 @@ body{}
 .span-titulo-post{margin: 0 auto;font-size: 20px}
 .btn-post{text-align: center;color: white;}
 .span-post{text-align: center;}
+.contenido-publicacion{background: radial-gradient(circle, #003867, #001A4B, #00082C);text-align: center;color: white;text-align: left;}
 
 
 @media (min-width: 0px) and (max-width:  600px){
