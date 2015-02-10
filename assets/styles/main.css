@@ -1,5 +1,6 @@
 /*.post{background: radial-gradient(circle, #1799C5, #045374,#022E5D);color: white}*/
-body{background: radial-gradient(circle, #8C8C8C,#535353,#404040)}
+body{}
+#container{background: radial-gradient(circle, #8C8C8C,#535353,#404040)}
 .btn-menu{background: radial-gradient(circle, #003867, #001A4B, #00082C);text-align: center;color: white;}
 .h3-menu{margin: 0 auto;text-align: center;color: white;text-decoration: none}
 
@@ -18,8 +19,30 @@ body{background: radial-gradient(circle, #8C8C8C,#535353,#404040)}
 .btn-post-recientes{color: white}
 .mi-toolbar-noticia{background: radial-gradient(circle, #CE0000,#850000,#520000);border-radius: 5px}
 
-/*.animated-menu{transition: .5s linear all;opacity: 1;display: block}
-.animated-menu.ng-hide{opacity: 0;overflow: hidden;} */
+#contenido-publicacion-post{transition: .5s linear all;opacity: 1;}
+#contenido-publicacion-post.ng-hide{transition: .5s linear all;opacity: 1;overflow: hidden;}
+#contenedor-event,#contenedor-new,#contenedor-post,#md-content-publicacion-post,#md-content-publicacion-new,#md-content-publicacion-event,#md-content-publicacion-serie{background: transparent;}
 
-/*.animated{transition: .5s linear all;opacity: 0;overflow: hidden;}
-.animated.ng-hide{opacity: 1;display: block!important;}*/
+#md-content-publicacion-post{transition: .5s linear all;opacity: 1;}
+#md-content-publicacion-post.ng-hide{transition: .5s linear all;opacity: 1;overflow: hidden;}
+#md-content-publicacion-new{transition: .5s linear all;opacity: 1;}
+#md-content-publicacion-new.ng-hide{transition: .5s linear all;opacity: 1;overflow: hidden;}
+#md-content-publicacion-event{transition: .5s linear all;opacity: 1;}
+#md-content-publicacion-event.ng-hide{transition: .5s linear all;opacity: 1;overflow: hidden;}
+#md-content-publicacion-serie{transition: .5s linear all;opacity: 1;}
+#md-content-publicacion-serie.ng-hide{transition: .5s linear all;opacity: 1;overflow: hidden;}
+
+.titulo-post-event,.titulo-post-new,.titulo-post-post,.titulo-post-serie{font-size: 10px}
+.mi-toolbar-post{background: radial-gradient(circle, #CE0000,#850000,#520000);text-align: center;}
+.span-titulo-post{margin: 0 auto;font-size: 20px}
+.btn-post{text-align: center;color: white;}
+.span-post{text-align: center;}
+
+
+@media (min-width: 0px) and (max-width:  600px){
+#md-content-publicacion-post.ng-hide{transition: .5s linear all;opacity: 1;display: block!important;}
+#md-content-publicacion-new.ng-hide{transition: .5s linear all;opacity: 1;display: block!important;}
+#md-content-publicacion-event.ng-hide{transition: .5s linear all;opacity: 1;display: block!important;}
+#md-content-publicacion-serie.ng-hide{transition: .5s linear all;opacity: 1;display: block!important;}
+#contenido-publicacion.ng-hide{transition: .5s linear all;opacity: 1;display: block!important;}
+} 

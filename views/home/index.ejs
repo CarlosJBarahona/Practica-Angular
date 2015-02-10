@@ -1,3 +1,6 @@
+<md-content id="container">
+
+
 <div ng-controller="MenuCtrl" layout="column">
 		<md-content layout="row" flex="100" >
 			<md-button flex class="btn-menu" hide-gt-md ng-click="openMenu()">
@@ -21,8 +24,7 @@
 		</div>
 </div>
 
-<div ng-controller="NavbarCtrl" layout="column" layout-align="center center">
-    <md-sidenav id="contenedor-noticias" md-component-id="left">
+<div ng-controller="NavbarCtrl" layout="column" layout-align="center center">    <md-sidenav id="contenedor-noticias" md-component-id="left">
       <md-button class="md-raised md-warn" ng-click="closeLeftMenu()">
           Cerrar
       </md-button>
@@ -46,16 +48,136 @@
 </div>
 
 
-<div flex layout-gt-md="row" ng-controller="MainCtrl">
-	<md-content id="md-content-post" class="md-padding "  flex ng-repeat="slide in slides">
-		<md-toolbar class="mi-toolbar-slide">
-			<h2 class="md-toolbar-tools titulo-post" ng-click="slideVisibility = !slideVisibility">
-				<span class="">{{slide.title}}</span>
-			</h2>
-		</md-toolbar>
-		<div ng-show="slideVisibility" class="animated mi-md-content">			
-			<img class="img-post" src="images/{{slide.image}}.jpg" >
-			<p class="post">{{slide.text}}</p>
+	<div flex layout-gt-md="row" ng-controller="MainCtrl">
+	
+		<md-content id="md-content-post" class="md-padding "  flex ng-repeat="slide in slides">
+				<md-toolbar class="mi-toolbar-slide">
+					<h2 class="md-toolbar-tools titulo-post" ng-click="slideVisibility = !slideVisibility">
+						<span class="">{{slide.title}}</span>
+					</h2>
+
+				</md-toolbar>
+				<div ng-show="slideVisibility" class="animated mi-md-content">			
+					<img class="img-post" src="images/{{slide.image}}.jpg" >
+					<p class="post">{{slide.text}}</p>
+				</div>
+			</md-content>
+	
+	</div>
+
+		<div id="contenedor-publicaciones" layout-gt-md="row" ng-controller="PublicacionCtrl">
+
+			<md-content id="contenedor-post" layout="column" class="md-padding "  flex>
+
+			     <md-content>
+				      <md-toolbar class="mi-toolbar-post" >
+					      	<h2 class="md-toolbar-tools titulo-post-new">
+								<span class="span-titulo-post">Post</span>
+								<span hide-gt-sm flex flex-order="2" ng-click="columnapostVisibility = !columnapostVisibility" class="">mostrar</span>
+							</h2>
+				      </md-toolbar>
+			    </md-content>
+
+				<md-content id="md-content-publicacion-post" class="md-padding " flex ng-repeat="post in posts" hide-sm show-gt-sm ng-hide="columnapostVisibility">
+					<md-toolbar class="mi-toolbar-slide" >
+						<h2 class="md-toolbar-tools titulo-post-post">
+							<span flex flex-order="1" class="">{{post.title}}</span>  
+							<span hide-gt-sm flex flex-order="2" ng-click="postVisibility = !postVisibility" class="">mostrar</span>
+						</h2>
+					</md-toolbar>
+					<div layout="row" layout-align="start center" id="contenido-publicacion" hide-sm show-gt-sm ng-hide="postVisibility" >
+						<div id="publicacion" class="imagen-publicacion"><img class="img-post" src="images/{{post.image}}.jpg"></div>
+						<div id="publicacion" class="text-publicacion">{{post.text}}</div>
+					</div>
+				</md-content>
+
+			</md-content>
+
+
+		<md-content id="contenedor-new" layout="column" class="md-padding "  flex>
+			
+			     <md-content>
+				      <md-toolbar class="mi-toolbar-post" >
+					      	<h2 class="md-toolbar-tools titulo-post-new">
+								<span class="span-titulo-post">New</span>
+								<span hide-gt-sm flex flex-order="2" ng-click="columnanewVisibility = !columnanewVisibility" class="">mostrar</span>
+							</h2>
+				      </md-toolbar>
+			    </md-content>
+
+				
+				<md-content id="md-content-publicacion-new" class="md-padding " flex ng-repeat="new in news" hide-sm show-gt-sm ng-hide="columnanewVisibility">
+					<md-toolbar class="mi-toolbar-slide">
+						<h2 class="md-toolbar-tools titulo-post-new">
+							<span class="">{{new.title}}</span>
+							<span hide-gt-sm flex flex-order="2" ng-click="newVisibility = !newVisibility" class="">mostrar</span>
+						</h2>
+					</md-toolbar>
+					<div layout="row" layout-align="start center" id="contenido-publicacion" hide-sm show-gt-sm ng-hide="newVisibility" >
+						<div id="publicacion" class="imagen-publicacion"><img class="img-post" src="images/{{new.image}}.jpg"></div>
+						<div id="publicacion" class="text-publicacion">{{new.text}}</div>
+					</div>
+				</md-content>
+
+			</md-content>
+
+
+		<md-content id="contenedor-event" layout="column" class="md-padding "  flex>
+			
+			     <md-content>
+				      <md-toolbar class="mi-toolbar-post" >
+					      	<h2 class="md-toolbar-tools titulo-post-new">
+								<span class="span-titulo-post">Event</span>
+								<span hide-gt-sm flex flex-order="2" ng-click="columnaeventVisibility = !columnaeventVisibility" class="">mostrar</span>
+							</h2>
+				      </md-toolbar>
+			    </md-content>
+
+				
+				<md-content id="md-content-publicacion-event" class="md-padding " flex ng-repeat="event in events" hide-sm show-gt-sm ng-hide="columnaeventVisibility">
+					<md-toolbar class="mi-toolbar-slide">
+						<h2 class="md-toolbar-tools titulo-post-event">
+							<span class="">{{event.title}}</span>
+							<span hide-gt-sm flex flex-order="2" ng-click="eventVisibility = !eventVisibility" class="">mostrar</span>
+						</h2>
+					</md-toolbar>
+					<div layout="row" layout-align="start center" id="contenido-publicacion" hide-sm show-gt-sm ng-hide="eventVisibility" >
+						<div id="publicacion" class="imagen-publicacion"><img class="img-post" src="images/{{event.image}}.jpg"></div>
+						<div id="publicacion" class="text-publicacion">{{event.text}}</div>
+					</div>
+				</md-content>
+
+			</md-content>
+
+		<md-content id="contenedor-event" layout="column" class="md-padding "  flex>
+			
+			     <md-content>
+				      <md-toolbar class="mi-toolbar-post" >
+					      	<h2 class="md-toolbar-tools titulo-post-new">
+								<span class="span-titulo-post">Series</span>
+								<span hide-gt-sm flex flex-order="2" ng-click="columnaserieVisibility = !columnaserieVisibility" class="">mostrar</span>
+							</h2>
+				      </md-toolbar>
+			    </md-content>
+
+				
+				<md-content id="md-content-publicacion-serie" class="md-padding " flex ng-repeat="event in events" hide-sm show-gt-sm ng-hide="columnaserieVisibility">
+					<md-toolbar class="mi-toolbar-slide">
+						<h2 class="md-toolbar-tools titulo-post-event">
+							<span class="">{{event.title}}</span>
+							<span hide-gt-sm flex flex-order="2" ng-click="eventVisibility = !eventVisibility" class="">mostrar</span>
+						</h2>
+					</md-toolbar>
+					<div layout="row" layout-align="start center" id="contenido-publicacion" hide-sm show-gt-sm ng-hide="eventVisibility" >
+						<div id="publicacion" class="imagen-publicacion"><img class="img-post" src="images/{{event.image}}.jpg"></div>
+						<div id="publicacion" class="text-publicacion">{{event.text}}</div>
+					</div>
+				</md-content>
+
+			</md-content>
+
+
+
 		</div>
-	</md-content>
-</div>
+
+</md-content>
