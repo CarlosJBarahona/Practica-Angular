@@ -1,10 +1,11 @@
 <div ng-controller="MenuCtrl" layout="column">
-		<md-content layout="row" hide-gt-sm layout-sm="column" flex="100" >
-			<div flex class="btn-menu" >
+		<md-content layout="row" flex="100" >
+			<md-button flex class="btn-menu" hide-gt-md ng-click="openMenu()">
 				<h3 class="h3-menu">MENU</h3>
-			</div>
+			</md-button>
 		</md-content>
-		<md-content flex layout="row" hide-sm >
+		<br/>
+		<div flex layout-gt-md="row" md-component-id="menu">
 			<div flex class="btn-menu">
 				<a href=""class="h3-menu">opcion</a>
 			</div>
@@ -17,15 +18,15 @@
 			<div flex class="btn-menu">
 				<a href=""class="h3-menu">opcion</a>
 			</div>
-		</md-content>
+		</div>
 </div>
 
 <div ng-controller="NavbarCtrl" layout="column" layout-align="center center">
-    <md-sidenav md-component-id="left">
+    <md-sidenav id="contenedor-noticias" md-component-id="left">
       <md-button class="md-raised md-warn" ng-click="closeLeftMenu()">
           Cerrar
       </md-button>
-	    <md-content class='md-padding' layout-align-gt-sm  ng-repeat="noticia in noticias">
+	    <md-content id="md-content-noticias" class='md-padding' layout-align-sm  ng-repeat="noticia in noticias">
 			<md-toolbar class="mi-toolbar-noticia">
 				<h2 class="md-toolbar-tools titulo-post" ng-click="noticiaVisibility = !noticiaVisibility">
 					<span class="">{{noticia.title}}</span>
@@ -37,16 +38,16 @@
 			</div>
 	    </md-content>
     </md-sidenav>
-     <md-content>
-      <md-button class="md-primary" ng-click="openLeftMenu()">
+     <md-content id='btn-post-recientes'>
+      <md-button class='btn-post-recientes' ng-click="openLeftMenu()">
           Post Recientes
       </md-button>
     </md-content>
 </div>
 
 
-<div layout="row" flex layout-sm="column" ng-controller="MainCtrl">
-	<md-content flex="25" flex-sm="100"  class='md-padding' ng-repeat="slide in slides">
+<div flex layout-gt-md="row" ng-controller="MainCtrl">
+	<md-content id="md-content-post" class="md-padding "  flex ng-repeat="slide in slides">
 		<md-toolbar class="mi-toolbar-slide">
 			<h2 class="md-toolbar-tools titulo-post" ng-click="slideVisibility = !slideVisibility">
 				<span class="">{{slide.title}}</span>
@@ -58,3 +59,4 @@
 		</div>
 	</md-content>
 </div>
+
