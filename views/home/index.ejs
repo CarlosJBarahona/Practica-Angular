@@ -3,12 +3,12 @@
 
 <div ng-controller="MenuCtrl" layout="column">
 		<md-content layout="row" flex="100" >
-			<md-button flex class="btn-menu" hide-gt-md ng-click="openMenu()">
+			<md-button flex class="btn-menu" hide-gt-md ng-click="menuVisibility = !menuVisibility">
 				<h3 class="h3-menu">MENU</h3>
 			</md-button>
 		</md-content>
 		<br/>
-		<div flex layout-gt-md="row" md-component-id="menu">
+		<div id="menu" flex layout-gt-md="row" hide-sm  ng-hide="menuVisibility">
 			<div flex class="btn-menu">
 				<a href=""class="h3-menu">opcion</a>
 			</div>

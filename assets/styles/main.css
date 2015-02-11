@@ -32,6 +32,8 @@ body{}
 #md-content-publicacion-event.ng-hide{transition: .5s linear all;opacity: 1;overflow: hidden;}
 #md-content-publicacion-serie{transition: .5s linear all;opacity: 1;}
 #md-content-publicacion-serie.ng-hide{transition: .5s linear all;opacity: 1;overflow: hidden;}
+#menu{transition: .5s linear all;opacity: 1;}
+#menu.ng-hide{transition: .5s linear all;opacity: 1;overflow: hidden;}
 
 .titulo-post-event,.titulo-post-new,.titulo-post-post,.titulo-post-serie{font-size: 10px}
 .mi-toolbar-post{background: radial-gradient(circle, #CE0000,#850000,#520000);text-align: center;}
@@ -47,6 +49,7 @@ body{}
 #md-content-publicacion-event.ng-hide{transition: .5s linear all;opacity: 1;display: block!important;}
 #md-content-publicacion-serie.ng-hide{transition: .5s linear all;opacity: 1;display: block!important;}
 #contenido-publicacion.ng-hide{transition: .5s linear all;opacity: 1;display: block!important;}
+#menu.ng-hide{transition: .5s linear all;opacity: 1;display: block!important;}
 }
 
 @media (min-width: 601px){
@@ -55,4 +58,5 @@ body{}
 #md-content-publicacion-event.ng-hide{display: block!important;}
 #md-content-publicacion-serie.ng-hide{display: block!important;}
 #contenido-publicacion.ng-hide{display: block!important;}
+#menu.ng-hide{display: block!important;}
 } 
