@@ -1,5 +1,5 @@
 /*.post{background: radial-gradient(circle, #1799C5, #045374,#022E5D);color: white}*/
-body{}
+body{background: radial-gradient(circle, #8C8C8C,#535353,#404040)}
 #container{background: radial-gradient(circle, #8C8C8C,#535353,#404040)}
 .btn-menu{background: radial-gradient(circle, #003867, #001A4B, #00082C);text-align: center;color: white;}
 .h3-menu{margin: 0 auto;text-align: center;color: white;text-decoration: none}
