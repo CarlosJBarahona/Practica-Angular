@@ -25,13 +25,11 @@ body{}
 #contenedor-event,#contenedor-new,#contenedor-post,#md-content-publicacion-post,#md-content-publicacion-new,#md-content-publicacion-event,#md-content-publicacion-serie{background: transparent;}
 
 #md-content-publicacion-post{transition: .5s linear all;opacity: 1;}
-#md-content-publicacion-post.ng-hide{transition: .5s linear all;opacity: 1;overflow: hidden;}
+#md-content-publicacion-post.ng-hide{transition: .5s linear all;opacity: 1;overflow: hidden!important;}
 #md-content-publicacion-new{transition: .5s linear all;opacity: 1;}
-#md-content-publicacion-new.ng-hide{transition: .5s linear all;opacity: 1;overflow: hidden;}
+#md-content-publicacion-new.ng-hide{transition: .5s linear all;opacity: 1;overflow: hidden!important;}
 #md-content-publicacion-event{transition: .5s linear all;opacity: 1;}
-#md-content-publicacion-event.ng-hide{transition: .5s linear all;opacity: 1;overflow: hidden;}
-#md-content-publicacion-serie{transition: .5s linear all;opacity: 1;}
-#md-content-publicacion-serie.ng-hide{transition: .5s linear all;opacity: 1;overflow: hidden;}
+#md-content-publicacion-event.ng-hide{transition: .5s linear all;opacity: 1;overflow: hidden!important;}
 #menu{transition: .5s linear all;opacity: 1;}
 #menu.ng-hide{transition: .5s linear all;opacity: 1;overflow: hidden;}
 
@@ -41,22 +39,21 @@ body{}
 .btn-post{text-align: center;color: white;}
 .span-post{text-align: center;}
 .contenido-publicacion{text-decoration: none;background: radial-gradient(circle, #003867, #001A4B, #00082C);text-align: center;color: white;text-align: justify;font-size: 13px}
-
+#publicacion{max-height: 50%}
 
 @media (min-width: 0px) and (max-width:  600px){
-#md-content-publicacion-post.ng-hide{transition: .5s linear all;opacity: 1;display: block!important;}
-#md-content-publicacion-new.ng-hide{transition: .5s linear all;opacity: 1;display: block!important;}
-#md-content-publicacion-event.ng-hide{transition: .5s linear all;opacity: 1;display: block!important;}
-#md-content-publicacion-serie.ng-hide{transition: .5s linear all;opacity: 1;display: block!important;}
-#contenido-publicacion.ng-hide{transition: .5s linear all;opacity: 1;display: block!important;}
+#md-content-publicacion-post.ng-hide,#md-content-publicacion-new.ng-hide,#md-content-publicacion-event.ng-hide,#md-content-publicacion-serie.ng-hide{transition: .5s linear all;opacity: 1;display: block!important;}
+
+#contenido-publicacion{transition: .5s linear all;opacity: 1;}
+#contenido-publicacion.ng-hide{transition: .5s linear all;opacity: 0;}
 #menu.ng-hide{transition: .5s linear all;opacity: 1;display: block!important;}
 }
 
 @media (min-width: 601px){
-#md-content-publicacion-post.ng-hide{display: block!important;}
-#md-content-publicacion-new.ng-hide{display: block!important;}
-#md-content-publicacion-event.ng-hide{display: block!important;}
-#md-content-publicacion-serie.ng-hide{display: block!important;}
-#contenido-publicacion.ng-hide{display: block!important;}
-#menu.ng-hide{display: block!important;}
+#md-content-publicacion-post.ng-hide{display: inline-block!important;}
+#md-content-publicacion-new.ng-hide{display: inline-block!important;}
+#md-content-publicacion-event.ng-hide{display: inline-block!important;}
+#md-content-publicacion-serie.ng-hide{display: inline-block!important;}
+#contenido-publicacion.ng-hide{display: inline-block!important;}
+#menu.ng-hide{display: inline-block!important;}
 } 

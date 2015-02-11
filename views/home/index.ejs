@@ -82,12 +82,12 @@
 					<md-toolbar class="mi-toolbar-slide" >
 						<h2 class="md-toolbar-tools titulo-post-post">
 							<span flex flex-order="1" class="">{{post.title}}</span>  
-							<span hide-gt-sm flex flex-order="2" ng-click="postVisibility = !postVisibility" class="">mostrar</span>
+							<!--<span hide-gt-sm flex flex-order="2" ng-click="postVisibility = !postVisibility" class="">mostrar</span>-->
 						</h2>
 					</md-toolbar>
-					<div layout="row" layout-align="start center" id="contenido-publicacion" class="contenido-publicacion" hide-sm show-gt-sm ng-hide="postVisibility" >
-						<div id="publicacion" class="imagen-publicacion"><img class="img-post" src="images/{{post.image}}.jpg"></div>
-						<div id="publicacion" class="text-publicacion">{{post.text}}</div>
+					<div layout="row" layout-align="start center" id="contenido-publicacion" class="contenido-publicacion" ng-hide="postVisibility" >
+						<div id="publicacion" flex="50" class="imagen-publicacion"><img class="img-post" src="images/{{post.image}}.jpg"></div>
+						<div id="publicacion" flex="50" class="text-publicacion">{{post.text}}</div>
 					</div>
 				</md-content>
 
@@ -110,12 +110,12 @@
 					<md-toolbar class="mi-toolbar-slide">
 						<h2 class="md-toolbar-tools titulo-post-new">
 							<span class="">{{new.title}}</span>
-							<span hide-gt-sm flex flex-order="2" ng-click="newVisibility = !newVisibility" class="">mostrar</span>
+							<!--<span hide-gt-sm flex flex-order="2" ng-click="newVisibility = !newVisibility" class="">mostrar</span>-->
 						</h2>
 					</md-toolbar>
-					<div layout="row" layout-align="start center" id="contenido-publicacion" class="contenido-publicacion" hide-sm show-gt-sm ng-hide="newVisibility" >
-						<div id="publicacion" class="imagen-publicacion"><img class="img-post" src="images/{{new.image}}.jpg"></div>
-						<div id="publicacion" class="text-publicacion">{{new.text}}</div>
+					<div layout="row" flex layout-align="start center" id="contenido-publicacion" class="contenido-publicacion" hide-sm show-gt-sm ng-hide="newVisibility" >
+						<div id="publicacion" flex="50" class="imagen-publicacion"><img class="img-post" src="images/{{new.image}}.jpg"></div>
+						<div id="publicacion" flex="50" class="text-publicacion">{{new.text}}</div>
 					</div>
 				</md-content>
 
@@ -142,8 +142,8 @@
 						</h2>
 					</md-toolbar>
 					<div layout="row" layout-align="start center" id="contenido-publicacion" class="contenido-publicacion" hide-sm show-gt-sm ng-hide="eventVisibility" >
-						<div id="publicacion" class="imagen-publicacion"><img class="img-post" src="images/{{event.image}}.jpg"></div>
-						<div id="publicacion" class="text-publicacion">{{event.text}}</div>
+						<div id="publicacion" flex="50" class="imagen-publicacion"><img class="img-post" src="images/{{event.image}}.jpg"></div>
+						<!--<div id="publicacion" flex="50" class="text-publicacion">{{event.text}}</div>-->
 					</div>
 				</md-content>
 

@@ -53,6 +53,8 @@ angular.module('angular-material')
 angular.module('angular-material')
   app.controller('PublicacionCtrl', function ($scope) {
 
+
+
   $scope.posts = [
    {
          title:'Post 1 Lorem ipsum dolor',
