@@ -1,4 +1,3 @@
-/*.post{background: radial-gradient(circle, #1799C5, #045374,#022E5D);color: white}*/
 body{background: radial-gradient(circle, #8C8C8C,#535353,#404040)}
 #container{background: radial-gradient(circle, #8C8C8C,#535353,#404040)}
 .btn-menu{background: radial-gradient(circle, #003867, #001A4B, #00082C);text-align: center;color: white;}
@@ -8,10 +7,11 @@ body{background: radial-gradient(circle, #8C8C8C,#535353,#404040)}
 .post{color: white;text-align: justify; width: 90%;margin: 0 auto; padding: 5px 0 5px ;}
 .mi-md-content{background: #022E5D;display: block!important}
 .img-post{width: 100%;height: 200px}
-.titulo-post{font-weight: 700;text-align: center;box-shadow: 6px 7px 5px 0px rgba(0,0,0,0.75);}
-.mi-toolbar-slide{background: radial-gradient(circle, #003867, #001A4B, #00082C);border-radius: 5px}
+.titulo-post{font-weight: 700;text-align: center;width: auto;margin: 0 auto}
+.mi-toolbar-slide{background: radial-gradient(circle, #003867, #001A4B, #00082C);border-radius: 5px;text-align: center;box-shadow: 6px 7px 5px 0px rgba(0,0,0,0.75);}
 .animated{transition: .5s linear all;opacity: 1;overflow: hidden;}/*contradiccion del ng-hide para crear el efecto de transicion*/
 .animated.ng-hide{opacity: 0}/*contradiccion del ng-hide para crear el efecto de transicion*/
+.span-titulo-principal{display: inline-block;}
 
 #contenedor-noticias{background: radial-gradient(circle, #0487D7,#0C5E95,#133757,#142840);}
 #md-content-noticias{background: transparent;}

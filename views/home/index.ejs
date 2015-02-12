@@ -1,6 +1,5 @@
 <md-content id="container">
 
-
 <div ng-controller="MenuCtrl" layout="column">
 		<md-content layout="row" flex="100" >
 			<md-button flex class="btn-menu" hide-gt-md ng-click="menuVisibility = !menuVisibility">
@@ -24,7 +23,8 @@
 		</div>
 </div>
 
-<div ng-controller="NavbarCtrl" layout="column" layout-align="center center">    <md-sidenav id="contenedor-noticias" md-component-id="left">
+<div ng-controller="NavbarCtrl" layout="column" layout-align="center center">    
+	<md-sidenav id="contenedor-noticias" md-component-id="left">
       <md-button class="md-raised md-warn" ng-click="closeLeftMenu()">
           Cerrar
       </md-button>
@@ -50,10 +50,10 @@
 
 	<div flex layout-gt-md="row" ng-controller="MainCtrl">
 	
-		<md-content id="md-content-post" class="md-padding "  flex ng-repeat="slide in slides">
+		<md-content id="md-content-post" class="md-padding "  flex layout-wrap ng-repeat="slide in slides">
 				<md-toolbar class="mi-toolbar-slide">
 					<h2 class="md-toolbar-tools titulo-post" ng-click="slideVisibility = !slideVisibility">
-						<span class="">{{slide.title}}</span>
+						{{slide.title}}
 					</h2>
 
 				</md-toolbar>
@@ -61,7 +61,7 @@
 					<img class="img-post" src="images/{{slide.image}}.jpg" >
 					<p class="post">{{slide.text}}</p>
 				</div>
-			</md-content>
+		</md-content>
 	
 	</div>
 

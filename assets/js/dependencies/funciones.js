@@ -25,23 +25,18 @@ angular.module('angular-material')
 
   $scope.slides = [
    {
-         title:'Lorem ipsum dolor',
+         title:'Quienes Somos',
          image:'1',
          text:'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa'
    },
    {
-         title:'Lorem ipsum dolor',
+         title:'Servicios',
          image:'2',
          text:'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa'
    },
       {
-         title:'Lorem ipsum dolor',
+         title:'Contacto',
          image:'3',
-         text:'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa'
-   },
-      {
-         title:'Lorem ipsum dolor',
-         image:'4',
          text:'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa'
    }
 
